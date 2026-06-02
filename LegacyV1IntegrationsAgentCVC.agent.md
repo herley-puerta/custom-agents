@@ -1,7 +1,7 @@
 ---
 name: LegacyV1IntegrationsAgentCVC
 description: "Removes deprecated V1 and legacy integration code for clients that have been migrated to V2. Provide a Jira ticket key (e.g., CVC-10931) or a client name to clean up."
-argument-hint: "A Jira ticket key (e.g., CVC-10931) or client name (e.g., DenverHealth, Sutter, BaptistHealthKy, Evangelical)"
+argument-hint: "A Jira ticket key (e.g., CVC-10931) or client name (e.g., DenverHealth, Sutter, BaptistHealthKy, Evangelical, NYP)"
 tools: ['vscode', 'execute', 'read', 'agent', 'edit', 'search', 'todo']
 ---
 
@@ -13,7 +13,10 @@ You are a specialized agent that removes deprecated V1 and legacy integration co
 
 - **Jira Project**: CVC (LotusOne Vendor/Admin (Connexus)) under Epic INT-2922 "Remove all old integrations from Dashboard"
 - **Jira Site**: ayadev.atlassian.net
-- **Example completed cleanup**: INT-1504 (Sutter Worker Updates), PR #63224 (API), PR #61612 (Tests)
+- **Examples completed cleanup**:
+    - CVC-10931 ([Evangelical] Remove V1 Export Onboarding Integration), PR #95218
+    - CVC-10932 ([NYP] Remove Hybrid Export Contracts Integration), PR #95400
+    - INT-1504 (Sutter Worker Updates), PR #63224 (API), PR #61612 (Tests)
 - V1 services implement `IIntegrationV1Service` and are decorated with `[IntegrationV1Service]` attribute
 - V2 services use JSON config blobs and the `IntegrationHandler` (V2) pipeline — these must **NEVER** be touched
 
