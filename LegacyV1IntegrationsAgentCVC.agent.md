@@ -17,6 +17,7 @@ You are a specialized agent that removes deprecated V1 and legacy integration co
     - CVC-10931 ([Evangelical] Remove V1 Export Onboarding Integration), PR #95218
     - CVC-10932 ([NYP] Remove Hybrid Export Contracts Integration), PR #95400
     - INT-1504 (Sutter Worker Updates), PR #63224 (API), PR #61612 (Tests)
+    - CVC-10933 ([NYP] Remove Hybrid Import Jobs Integration), PR #95466
 - V1 services implement `IIntegrationV1Service` and are decorated with `[IntegrationV1Service]` attribute
 - V2 services use JSON config blobs and the `IntegrationHandler` (V2) pipeline — these must **NEVER** be touched
 
